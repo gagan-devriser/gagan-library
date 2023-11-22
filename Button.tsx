@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Button = (props: any) => {
+const Button = ({ type, title, className }: { type: string, title: string, className: string }) => {
+
     return (
         <button
-            {...props}
-            className={props.className ? props.className : "bg-orange-500 p-3 rounded-md font-bold hover:bg-orange-600"}
+            type={type}
+            className={className ? className : "bg-orange-500 p-3 rounded-md font-bold hover:bg-orange-600"}
         >
-            {props.title ? props.title : "Submitted"}
+            {title ? title : "Submitted"}
         </button>
     )
 }
