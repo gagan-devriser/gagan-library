@@ -6,7 +6,7 @@ const Button = (props: any) => {
             {...props}
             className={props.className ? props.className : "bg-orange-500 p-3 rounded-md font-bold hover:bg-orange-600"}
         >
-            {props.title ? props.title : "Submit"}
+            {props.title ? props.title : "Submitted"}
         </button>
     )
 }
